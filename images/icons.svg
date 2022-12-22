@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+    <symbol id="red_close" viewBox="0 0 19.49 19.49">
+        <g id="Group_10059" transform="translate(3.536 3.536)">
+            <g id="Group_10058">
+                <line id="Line_189" x2="12.419" y2="12.419" fill="none" stroke="#d6464d" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+                <line id="Line_190" x1="12.419" y2="12.419" fill="none" stroke="#d6464d" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+            </g>
+        </g>
+    </symbol>
+    <svg id="green_check" viewBox="0 0 24.599 16.961">
+        <path id="Path_5761" d="M4629.518,2452.375l6.6,6.6,10.926-10.926" transform="translate(-4625.982 -2444.516)" fill="none" stroke="#0a8989" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+    </svg>
+
+
+</svg>
+

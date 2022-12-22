@@ -1,0 +1,13 @@
+{
+  "name": "fuzlee",
+  "version": "1.0.0",
+  "description": "This project has been created using **webpack-cli**, you can now run",
+  "main": "index.js",
+  "scripts": {
+    "rtl": "rtlcss css/bootstrap.min.css  css/bootstrap.rtl.min.css",
+    "purge": "purgecss --css css/bootstrap.min.css --content *.html  --output build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

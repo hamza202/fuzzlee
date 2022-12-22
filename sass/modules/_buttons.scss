@@ -1,0 +1,151 @@
+.btn {
+  line-height: 1;
+  border-radius: 8px;
+
+  &:focus {
+    box-shadow: none !important;
+  }
+
+  transition: all ease-in-out 0.3s;
+}
+
+%btn-comfig {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 8px 15px;
+  border: 0;
+  border-radius: 50px;
+  transition: all ease-in-out 0.3s;
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: rgba($color: $green-color, $alpha: 0.9);
+    color: $white;
+  }
+
+  //
+  //@include media-breakpoint-down(sm) {
+  //  font-size: 14px;
+  //}
+}
+
+.green-btn {
+  @extend %btn-comfig;
+  background-color: $green-color;
+  color: $white;
+
+  &:hover {
+    background-color: rgba($color: $green-color, $alpha: 0.9);
+    color: $white;
+  }
+
+  box-shadow: -15px 20px 50px rgba(10, 137, 137, 0.15);
+
+}
+.red-btn {
+  @extend %btn-comfig;
+  background-color: $red-color;
+  color: $white;
+
+  &:hover {
+    background-color: rgba($color: $red-color, $alpha: 0.9);
+    color: $white;
+  }
+
+  filter: drop-shadow(-15px 20px 40px rgba(253, 52, 110, 0.3));
+
+}
+.white-btn {
+  @extend %btn-comfig;
+  background-color: $white;
+  color: $green-color;
+
+  &:hover {
+    background-color: $green-color;
+    color: $white;
+
+    svg {
+      path {
+        fill: $white;
+      }
+    }
+  }
+}
+
+.plan-btn {
+  background-color: transparent;
+  border: 0;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 17px;
+  position: relative;
+  transition: all ease-in-out 0.3s;
+  display: flex;
+  align-items: center;
+  height: 45px;
+  span{
+    display: inline-block;
+    padding:4px 10px;
+    background-color: #45CB85;
+    border-radius: 40px;
+    color: $white-color;
+    font-size: 13px;
+    margin-#{$dir}:10px ;
+    transition: all ease-in-out 0.3s;
+  }
+  &:hover{
+    background: $green-color;
+    color: $white-color;
+    span{
+        background: $white-color;
+        color: $green-color;
+    }
+  }
+
+  &.active {
+    span{
+      background: $white-color;
+      color: $green-color;
+    }
+    background: $green-color;
+    color: $white-color;
+    &:after {
+      transition: all ease-in-out 0.3s;
+
+      position: absolute;
+      content: '';
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-width: 10px;
+      border-style: solid;
+      bottom: -17px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+      border-color: $green-color transparent transparent transparent;
+    }
+    &:hover {
+      background-color: rgba($color: $green-color, $alpha: 0.9);
+      &:after{
+        border-color: lighten($green-color, 0.9) transparent transparent transparent !important;
+      }
+    }
+  }
+}
+
+.icon-btn {
+  svg {
+    height: 15px;
+    width: auto;
+    margin-#{$dir}: 5px;
+
+    path {
+      transition: all ease-in-out 0.3s;
+    }
+  }
+}
